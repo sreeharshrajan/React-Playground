@@ -64,7 +64,6 @@ nav ul li a {
   background-color: rgba(85, 85, 85, 0.534);
 }
 
-
 .form-title {
   font-family: "Poppins", sans-serif, "arial";
   font-weight: 600;
@@ -112,15 +111,14 @@ input[type="submit"]:hover {
     margin-top: 0;
   }
 
-  nav{
-    padding:0;
+  nav {
+    padding: 0;
   }
-  nav ul{
+  nav ul {
     flex-direction: column;
-    
   }
 
-  nav ul li{
+  nav ul li {
     margin-bottom: 4px;
   }
 }
@@ -138,8 +136,16 @@ input[type="submit"]:hover {
 }
 
 /* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+
+/* React Hook Form */
+
+
+/* 
+.hook-form p {
+  color: #bf1650;
 }
+
+.hook-form p::before {
+  display: inline;
+  content: "⚠ ";
+} */

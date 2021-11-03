@@ -12,7 +12,10 @@ const Nav = () => {
           <Link to="/Curd">CRUD Operations</Link>
         </li>
         <li> 
-        <Link to="/form">React Form Validation</Link>
+        <Link to="/form">Form Validation - Custom Hook</Link>
+      </li>
+      <li> 
+        <Link to="/reacthookform">React Form Hook</Link>
       </li>
       </ul> 
     </nav>

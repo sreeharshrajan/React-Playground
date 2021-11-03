@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Nav from "./components/Nav";
 import Curd from "./pages/Crud";
 import HookForm from "./pages/HookForm"
+import ReactHookForm from "./pages/ReactHookForm"
 function App() {
   return (
     <div> 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/read" component={Read} />
           <Route path="/update" component={Update} />
           <Route path="/form" component={HookForm} />
+          <Route path="/reacthookform" component={ReactHookForm} />
         </Switch>
       </div>
     </div>

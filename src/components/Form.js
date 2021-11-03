@@ -11,7 +11,7 @@ const Form = () => {
 
   return (
     <div className="Form">
-      <div className="form-title">Form Validation</div>
+      <div className="form-title">Form Validation using Custom Hook</div>
       <div className="wrapper">
         <form onSubmit={submitForm}><button type='submit' /></form>
         
