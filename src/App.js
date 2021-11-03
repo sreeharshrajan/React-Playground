@@ -1,5 +1,6 @@
-import "./App.css";
+import "./styles/App.css";
 import { Switch, Route } from "react-router-dom";
+import React, { useEffect,useState } from "react";
 import Read from "./components/read/read";
 import Create from "./components/create/create";
 import Update from "./components/update/update";
@@ -8,11 +9,37 @@ import Nav from "./components/Nav";
 import Curd from "./pages/Crud";
 import HookForm from "./pages/HookForm"
 import ReactHookForm from "./pages/ReactHookForm"
+import PulseLoader from "react-spinners/PulseLoader";
+import styled from "styled-components";
+
+const Center = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+`;
+
 function App() {
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
+
   return (
     <div> 
-      <Nav />
+   
+      {loading ? (
+        <Center>
+          <PulseLoader  loading={loading} />
+        </Center>
+      ) : (
+        <>
+        <Nav />
       <div className="main"> 
+     
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/Curd" component={Curd} />
@@ -23,6 +50,8 @@ function App() {
           <Route path="/reacthookform" component={ReactHookForm} />
         </Switch>
       </div>
+      </>
+      )}
     </div>
   );
 }
