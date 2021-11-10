@@ -8,16 +8,16 @@ const Nav = () => {
         <li>
           <Link to="/">Home</Link>
         </li>
-        <li> 
+        <li>
           <Link to="/Curd">CRUD Operations</Link>
         </li>
-        <li> 
-        <Link to="/form">Form Validation - Custom Hook</Link>
-      </li>
-      <li> 
-        <Link to="/reacthookform">React Form Hook</Link>
-      </li>
-      </ul> 
+        <li>
+          <Link to="/immer">Todo using Immer</Link>
+        </li>
+        <li>
+          <Link to="/reacthookform">React Form Hook</Link>
+        </li>
+      </ul>
     </nav>
   );
 };
