@@ -1,21 +1,13 @@
-# Getting Started with Create React App
+# React Playground
 
+This repository conatins some random React Exercises, I did while learning react. I have particularly used hooks and axios to do CRUD functions.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Scripts implemented in this projects
 
-In the project directory, you can run:
+In the project directory, you can find:
 
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Todo using immer
+- Form Validations : Custom Hooks and React Hook Form
+- CRUD App using Axios and Semantic UI
+- Page Loading Animations
