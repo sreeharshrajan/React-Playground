@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Read() {
   const [apiData, setApiData] = useState([]);
+
   useEffect(() => {
     axios
       .get(`https://6177c11b9c328300175f5b27.mockapi.io/Crud`)
@@ -59,7 +60,7 @@ export default function Read() {
                   <Link to="/update">
                     <Button
                       color="green"
-                      onClick={() => 
+                      onClick={() =>
                         setData(data.id, data.firstName, data.lastName)
                       }
                     >

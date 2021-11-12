@@ -28,20 +28,26 @@ const TodoImmer = () => {
     <div className="container">
       <h1>Todo Using Immer</h1>
       <Form dispatch={dispatch} />
-      <div>
+      <ul style={{ listStyle: "auto" }}>
         {todos.map(({ text, complete }, i) => (
-          <div
+          <li
             key={text}
             onClick={() => dispatch({ type: "TOGGLE_COMPLETE", i })}
             style={{
               textDecoration: complete ? "line-through" : "",
+              margin: "1rem",
             }}
           >
             {text}
-          </div>
+          </li>
         ))}
-      </div>
-      <button onClick={() => dispatch({ type: "RESET" })}>reset</button>
+      </ul>
+      <button
+        style={{ margin: "1rem" }}
+        onClick={() => dispatch({ type: "RESET" })}
+      >
+        Reset List
+      </button>
     </div>
   );
 };

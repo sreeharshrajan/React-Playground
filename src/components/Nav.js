@@ -17,6 +17,9 @@ const Nav = () => {
         <li>
           <Link to="/reacthookform">React Form Hook</Link>
         </li>
+        <li>
+          <Link to="/pagination">Pagination</Link>
+        </li>
       </ul>
     </nav>
   );
