@@ -12,10 +12,13 @@ const Nav = () => {
           <Link to="/Curd">CRUD Operations</Link>
         </li>
         <li>
-          <Link to="/immer">Todo using Immer</Link>
+          <Link to="/immer">Todo- Immer</Link>
         </li>
         <li>
-          <Link to="/reacthookform">React Form Hook</Link>
+          <Link to="/reacthookform">RForm Hook</Link>
+        </li>
+        <li>
+          <Link to="/teacollection">Tea Collection</Link>
         </li>
         <li>
           <Link to="/pagination">Pagination</Link>

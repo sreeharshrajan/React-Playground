@@ -11,6 +11,7 @@ import HookForm from "./pages/HookForm";
 import TodoImmer from "./pages/TodoImmer";
 import ReactHookForm from "./pages/ReactHookForm";
 import Paginated from "./pages/Pagination";
+import TeaCollection from "./pages/TeaCollection";
 import PulseLoader from "react-spinners/PulseLoader";
 import styled from "styled-components";
 
@@ -50,6 +51,7 @@ function App() {
               <Route path="/reacthookform" component={ReactHookForm} />
               <Route path="/immer" component={TodoImmer} />
               <Route path="/pagination" component={Paginated} />
+              <Route path="/teacollection" component={TeaCollection} />
             </Switch>
           </div>
         </>
