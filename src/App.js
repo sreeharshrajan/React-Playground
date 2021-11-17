@@ -8,7 +8,7 @@ import Home from "./pages/Home";
 import Nav from "./components/Nav";
 import Curd from "./pages/Crud";
 import HookForm from "./pages/HookForm";
-import TodoImmer from "./pages/TodoImmer";
+import PhotoGallery from "./pages/PhotoGallery";
 import ReactHookForm from "./pages/ReactHookForm";
 import Paginated from "./pages/Pagination";
 import TeaCollection from "./pages/TeaCollection";
@@ -49,7 +49,7 @@ function App() {
               <Route path="/update" component={Update} />
               <Route path="/form" component={HookForm} />
               <Route path="/reacthookform" component={ReactHookForm} />
-              <Route path="/immer" component={TodoImmer} />
+              <Route path="/gallery" component={PhotoGallery} />
               <Route path="/pagination" component={Paginated} />
               <Route path="/teacollection" component={TeaCollection} />
             </Switch>

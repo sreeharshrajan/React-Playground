@@ -139,7 +139,6 @@ input[type="submit"]:hover {
 
 /* React Hook Form */
 
-
 /* 
 .hook-form p {
   color: #bf1650;
@@ -149,3 +148,8 @@ input[type="submit"]:hover {
   display: inline;
   content: "⚠ ";
 } */
+.xyz {
+  text-align: center;
+  width: 75%;
+  margin: auto;
+}

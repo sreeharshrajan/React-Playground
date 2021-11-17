@@ -9,10 +9,10 @@ const Nav = () => {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/Curd">CRUD Operations</Link>
+          <Link to="/Curd">CRUD</Link>
         </li>
         <li>
-          <Link to="/immer">Todo- Immer</Link>
+          <Link to="/gallery">Photo Gallery</Link>
         </li>
         <li>
           <Link to="/reacthookform">RForm Hook</Link>
