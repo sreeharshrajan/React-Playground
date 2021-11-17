@@ -12,6 +12,7 @@ import PhotoGallery from "./pages/PhotoGallery";
 import ReactHookForm from "./pages/ReactHookForm";
 import Paginated from "./pages/Pagination";
 import TeaCollection from "./pages/TeaCollection";
+import PicContainer from "./components/Gallery/PicContainer";
 import PulseLoader from "react-spinners/PulseLoader";
 import styled from "styled-components";
 
@@ -52,6 +53,7 @@ function App() {
               <Route path="/gallery" component={PhotoGallery} />
               <Route path="/pagination" component={Paginated} />
               <Route path="/teacollection" component={TeaCollection} />
+              <Route path="/image/:id" component={PicContainer} />
             </Switch>
           </div>
         </>

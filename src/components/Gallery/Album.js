@@ -46,15 +46,18 @@ class Album extends Component {
 
   render() {
     return (
-      <div className="xyz">
+      <div
+        style={{
+          display: "grid",
+          gridGap: "1rem",
+          gridTemplateColumns: "repeat(auto-fit,minmax(300px,1fr))",
+          gridAutoRows: "minmax(150px, auto)",
+        }}
+      >
         {this.state.pictures.map((picture) => (
-          <Link
-            key={picture.id}
-            to={`/image/${picture.id}`}
-            style={{ textDecoration: "none", color: "#000" }}
-          >
+          <Link key={picture.id} to={`/image/${picture.id}`}>
             {" "}
-            <Item picture={picture} />{" "}
+            <Item picture={picture} />
           </Link>
         ))}
       </div>

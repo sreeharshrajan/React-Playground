@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Pic from "./Pic";
-
+import "./PicContainer.css";
 class PicContainer extends Component {
   state = {
     value: parseInt(this.props.match.params.id),
@@ -62,14 +62,16 @@ class PicContainer extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="pic-container">
         <Pic
           key={this.state.pictures[this.state.value].id}
           picture={this.state.pictures[this.state.value]}
         />{" "}
         <br></br>
-        <button onClick={this.previous}>&#x3c;</button> {"       "}
-        <button onClick={this.next}>&#x3e;</button>
+        <div className="buttons">
+          <button onClick={this.previous}>&#x3c;</button> {"       "}
+          <button onClick={this.next}>&#x3e;</button>
+        </div>
       </div>
     );
   }
